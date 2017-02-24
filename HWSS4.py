@@ -81,14 +81,9 @@ bgcolor("lightgreen")
 
 
 ### 4.9.6
-####def drawpoly(t,n,sz):
-####    for i in range(n):
-####                t.fd(sz)
-####                t.lt(360/n)
-####tess = turtle.Turtle()
-####def draw_idiri(t,sz):
-####    
-####        Ko hieu de @@@@@
+##def draw_idiri(t,sz):
+##    drawpoly(t,sz,sz+100)
+##draw_idiri(tess,3)
 
 ### 4.9.7
 ##def sum_to(n):    

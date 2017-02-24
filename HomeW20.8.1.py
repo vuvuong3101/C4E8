@@ -14,3 +14,15 @@ for k in all_list:
     n = count_s_list(s_list, k)
     if n > 0:
         print("{0}: {1}".format(k,n))
+
+
+
+###20.8.2
+def add_fruit(inventory, fruit, quantity=0):
+    inventory[fruit]=quantity
+    return
+new_inventory = {}
+add_fruit(new_inventory, "strawberries", 15)
+print(new_inventory["strawberries"]==15)
+add_fruit(new_inventory, "strawberries", 25)
+print(new_inventory["strawberries"]==35)

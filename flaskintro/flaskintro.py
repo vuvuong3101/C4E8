@@ -23,6 +23,35 @@ image_list = [
       }
              ]
 
+image_food_list = [
+    {"src" :"https://media.foody.vn/res/g65/645246/prof/s480x300/foody-mobile-17424938_17349033667-491-636257011981478757.jpg",
+
+     "title": "Teastory Vietnam",
+
+     "text" : "100 Phạm Ngọc Thạch,  Quận Đống Đa, Hà Nội"
+     },
+
+    {"src" : "https://media.foody.vn/res/g10/95877/prof/s480x300/foody-mobile-ghf546-jpg-171-636137015804800853.jpg",
+
+     "title" : "Ngọc Thạch Quán - Sữa Chua & Caramen",
+
+     "text": "C5 TT. Kim Liên, Lương Định Của,  Quận Đống Đa, Hà Nội"
+     },
+
+    {"src": "https://media.foody.vn/res/g29/287833/prof/s480x300/foody-mobile-hongtra-jpg-473-636136079398873434.jpg",
+
+     "title":"Hồng Trà Coffee & Tea House - Thái Hà" ,
+
+     "text" : "302 Thái Hà,  Quận Đống Đa, Hà Nội"
+     },
+    {"src": "https://media.foody.vn/res/g10/94216/prof/s480x300/foody-mobile-cocktail-jpg-635469825552153119.jpg",
+
+    "title" : "Pharaoh's Bar & Upper - Lotte Center",
+
+    "text" : "Tầng 63 - 64, Lotte Center, 54 Liễu Giai,  Quận Ba Đình, Hà Nội",
+    }
+]
+
 @app.route("/login")
 def login():
     global number_visitor
@@ -36,5 +65,9 @@ def contact():
 @app.route("/food")
 def food():
     return render_template("food.html", image_list=image_list)
+
+@app.route("/foodblog")
+def foodblog():
+    return render_template("foodblog.html", food_list = image_food_list)
 if __name__ == '__main__':
     app.run()

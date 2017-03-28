@@ -51,6 +51,43 @@ image_food_list = [
     "text" : "Tầng 63 - 64, Lotte Center, 54 Liễu Giai,  Quận Ba Đình, Hà Nội",
     }
 ]
+@app.route("/addfood", methods=["GET", "POST"])
+def add_food():
+    if request.method == "GET":
+        return render_template("addfood.html")
+    if request.method == "POST":
+        new_food = FoodItem()
+        new_food.src = request.form["source"]
+        new_food.imgae = request.files["image"]
+        new_food.title = request.form["title"]
+        new_food.description = request.form["description"]
+        new_food.save()
+        return render_template("addfood.html")
+
+
+
+@app.route("/deletefood", methods=["GET", "POST"])
+def delete_food():
+    if request.method == "GET":
+        return render_template("deletefood.html")
+    if request.method == "POST":
+        new_food = FoodItem.objects(title =request.form["title"]).first()
+        if new_food is not None:
+            new_food.delete()
+        return render_template("deletefood.html")
+
+@app.route("/editfood", methods=["GET", "POST"])
+def edit_food():
+    if request.method == "GET":
+        return render_template("editfood.html")
+    if request.method == "POST":
+        edit_food = FoodItem.objects(title = request.form["title"]).first()
+        if edit_food is not None:
+            edit_food.src = request.form["source"]
+            # edit_food.title = request.form["title"]
+            edit_food.description = request.form["description"]
+            edit_food.save()
+        return render_template("editfood.html")
 
 @app.route("/login")
 def login():

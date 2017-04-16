@@ -1,0 +1,129 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HiddenPassion</title>
+    <link href="css/demo.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="img/icon.png" type="image/x-ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+        function SiteSpecial() {
+            var sites = ['http://www.nhaccuatui.com',
+                'http://24h.com.vn/',
+                'http://vnexpress.net/',
+                'https://www.youtube.com/embed/fbLVHOw68Zc']
+            document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
+        }
+        function SiteMovie() {
+            var sites = ['https://waka.vn/through-the-looking-glass-and-what-alice-found-there-lewis-carroll-john-tenniel-b1vRLW.html',
+                'https://waka.vn/co-nang-hoan-hao-quynh-thy-bRnQW.html',
+                'https://waka.vn/the-man-who-would-be-king-rudyard-kipling-bMVE5W.html',
+                'https://waka.vn/the-princess-and-the-goblin-george-macdonald-b9Zl9W.html',
+                'https://waka.vn/heidi-johanna-spyri-b5Kj3W.html',
+                'https://waka.vn/moi-chang-mot-nang-meg-cabot-bRq0yW.html',
+                'https://waka.vn/sex-trong-co-don-can-van-khanh-bEp0W.html',
+                'https://waka.vn/truyen-ngan-dac-sac-2014-nhieu-tac-gia-b3AlWW.html',
+                'https://waka.vn/ac-mong-3096-ngay-natascha-kampus-bLKorW.html'
+            ]
+
+            document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
+        }
+        function SiteBook() {
+            var sites = ['http://www.nhaccuatui.com',
+                'http://24h.com.vn/',
+                'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/284250119&amp;auto_play=true&amp;hide_related=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"']
+
+            document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
+        }
+        function SiteClip() {
+            var sites = ['http://www.nhaccuatui.com',
+                'http://24h.com.vn/',
+                'http://bilutv.com']
+            document.getElementById('myIframe').src = sites[Math.floor(Math.random() * sites.length)];
+        }
+
+    </script>
+    <style type="text/css">
+        body, html
+        {
+            margin: 0; padding: 0; height: 100%; overflow: hidden;
+        }
+        #header
+        {
+            position:absolute;
+            left: 0; top: 0; right: 0; height: 60px;
+            background-image: url("img/backg2.png") ;
+            /*background: #555555;*/
+            padding-top: 0;
+        }
+        #content
+        {
+            position:absolute;
+            left: 0; right: 0; bottom: 0; top: 60px;
+            background: #ffffff;
+            height: expression(document.body.clientHeight - 90);
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+
+// NGHIEM CAM SOI CODE =))
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="header">
+    <a href="###">
+        <img class="image" src="img/logo5.png"  alt="logo" style="margin-left: 20px; margin-top: 2px "/>
+    </a>
+    <nav class="skew-menu">
+        <ul style="margin-right: 20px; margin-bottom: 5px">
+            <!--<li>-->
+                <!--<a class="btn" style="margin: 0px 0px 0px 10px" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"  onClick="SiteSpecial()" >-->
+                    <!--<img src="img/home.png" width="25" height="20" />   HOME-->
+                <!--</a></li>-->
+            <li>
+                <a class="btn" style="margin: 0px 0px" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"  onClick="SiteMovie()" >
+                    <img src="img/headphone.png" width="25" height="20"/>   MUSICS
+                </a></li>
+            <li>
+                <a class="btn" style="margin: 0px 0px" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"  onClick="SiteMovie()" >
+                    <img src="img/iconmovie.png" width="25" height="20"/>   MOVIES
+                </a></li>
+            <li>
+                <a class="btn" style="margin: 0px 0px" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"  onClick="SiteClip()" >
+                    <img src="img/iconclip.png" width="27" height="20"/>   CLIPS
+                </a></li>
+            <li>
+                <a class="btn" style="margin: 0px 0px" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"  onClick="SiteBook()" >
+                    <img src="img/Books.png" width="25" height="20"/>   BOOKS
+                </a></li>
+             <li>
+                 <a class="btn" style="margin: 0px 0px" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"  onClick="SiteSpecial()" >
+                     <img src="img/internet.png" width="25" height="20" />   SPECIAL
+                 </a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="content">
+    <iframe width="100%" height="96%" id="myIframe" src="" name="tree" onLoad="IframeDidload" frameborder="0" scrolling="auto"></iframe>
+    <div class="footer-bar">
+        <span class="article-wrapper">
+            <span class="article-label">CopyRight 2017 by Team 4M  </span>
+        </span>
+
+    </div>
+</div>
+
+
+
+
+</body>

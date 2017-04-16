@@ -1,0 +1,162 @@
+.body {
+	font-family: Helvetica Neue, Helvetica, sans-serif;  
+	height: 100%;
+	overflow: hidden;
+}
+
+.menu{
+	
+	margin: 12px 0px;
+}
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 0.5px !important;
+}
+
+@media screen and (min-width: 992px){
+.menu{
+    transform: skew(-25deg);
+}    
+.choice{
+    transform: skew(25deg);
+}
+
+.menu .menu-button:first-child {
+	border-radius: 9px 0 0 9px;
+}
+
+.menu .menu-button:last-child {
+	border-right: none;
+	border-radius: 0 9px 9px 0;
+}
+
+
+@media screen and (min-width: 768px){
+.navbar {
+    border-radius: 0px;
+}
+.navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+}
+
+@media screen and (max-width: 959px){
+.menu .menu-button {
+	border-bottom: 0.5px solid #bbb;
+	background: teal !important;
+	color: white !important;
+	border-right: none;
+}
+}
+
+@media screen and (min-width: 768px){
+.navbar {
+    border-radius: 0px;
+}
+}
+
+.navbar-default{
+	border: none;
+	background: #2f4154;
+
+
+}
+
+.navbar{
+	border: none;
+	margin: 0;
+}
+
+.navbar-brand{
+	/* height: 130px; */
+	padding: 0px;
+}
+
+.menu-button {
+	background: #3f5365;
+	border-right: 1px solid #eee;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+	color: #555;
+	font-weight: bolder;
+	transition: all 0.5s linear;
+}
+
+.menu-button:hover .choice {  
+	color: #00b0b4 !important;
+}
+
+.menu-button:hover{
+	background: #649a9e !important;
+}
+
+.menu .menu-button .choice {
+
+	color:#050c17;
+	text-decoration: none;
+	background: transparent;
+}	
+
+
+.navbar-default .navbar-nav>.open>a:active, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {    
+	background: transparent !important;
+	
+}
+
+a, .site-link a:visited{
+	color: #888;
+	font-size: 10px;
+	font-family: arial, sans-serif;
+	margin-right: 10%;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.images{
+	margin-bottom: 6px;	
+}
+
+.footer-bar{
+	width: 100%;
+	height: 33px;
+	line-height: 33px;
+	background: #2f4154;
+	/*border-top: 3px solid cadetblue;*/
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.footer-bar-home{
+	width: 100%;
+	height: 50px;
+	line-height: 33px;
+	background: #23292f;
+	border-top: 3px solid #111111;	
+	bottom: 0;
+	left: 0;
+}
+.footer-bar .article-wrapper,
+.footer-bar-home .article-wrapper {
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	float: left;
+	margin-left: 3%;
+}
+.footer-bar .article-link a,.footer-bar .article-link a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
